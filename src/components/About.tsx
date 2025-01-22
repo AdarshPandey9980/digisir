@@ -6,9 +6,9 @@ import Image from "next/image";
 export default function Home() {
   return (
     <section id="about">
-      <main className="min-h-screen bg-white">
+      <main className="min-h-screen bg-white p-2">
         {/* First Hero Section */}
-        <div className="container mx-auto px-4 py-16">
+        <div className="container  py-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Right Column - App Screenshots */}
             <div className="relative">
@@ -16,7 +16,7 @@ export default function Home() {
                 <Image
                   src="/online-class.jpg"
                   alt="App Preview"
-                  width={800}
+                  width={700}
                   height={1000}
                   className="rounded-3xl shadow-2xl"
                   priority
@@ -30,7 +30,7 @@ export default function Home() {
 
             {/* Left Column - Content */}
             <div className="space-y-6">
-              <h1 className="text-6xl font-bold text-teal-800 leading-tight">
+              <h1 className="text-6xl font-bold text-[#002B5B] leading-tight">
                 Our Mission!
               </h1>
               <p className="text-lg text-slate-600">
@@ -46,11 +46,11 @@ export default function Home() {
         </div>
 
         {/* Second Hero Section (Swapped Content and Image) */}
-        <div className="container mx-auto px-4 py-16">
+        <div className="container   py-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Column - Content */}
             <div className="space-y-6">
-              <h1 className="text-6xl font-bold text-teal-800 leading-tight">
+              <h1 className="text-6xl font-bold text-[#002B5B] leading-tight">
               Empowering Education
               </h1>
               <p className="text-lg text-slate-600">
@@ -75,10 +75,6 @@ export default function Home() {
                   priority
                 />
               </div>
-
-              {/* Background Decorative Elements */}
-              <div className="absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-teal-100 rounded-full blur-3xl opacity-30"></div>
-              <div className="absolute bottom-0 left-0 transform -translate-x-1/2 w-96 h-96 bg-amber-100 rounded-full blur-3xl opacity-30"></div>
             </div>
           </div>
         </div>

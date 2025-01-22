@@ -6,13 +6,13 @@ export default function FeaturesSection() {
   return (
     <section id="features" className="py-16 bg-gray-100">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center text-teal-800 mb-12">
+        <h2 className="text-3xl font-bold text-center text-[#002B5B] mb-12">
           Highlights of DigiSir.
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Card 1 */}
-          <div className="bg-emerald-600 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+          <div className="bg-[#002B5B] p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
             <div className="flex items-center mb-4">
               <BookOpen className="text-white w-12 h-12" />
               <h3 className="text-xl font-semibold text-white ml-4">Academic Management</h3>
@@ -23,7 +23,7 @@ export default function FeaturesSection() {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-emerald-600 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+          <div className="bg-[#002B5B] p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
             <div className="flex items-center mb-4">
               <Calendar className="text-white w-12 h-12" />
               <h3 className="text-xl font-semibold text-white ml-4">Timetable Generation</h3>
@@ -34,7 +34,7 @@ export default function FeaturesSection() {
           </div>
 
           {/* Card 3 */}
-          <div className="bg-emerald-600 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+          <div className="bg-[#002B5B] p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
             <div className="flex items-center mb-4">
               <User className="text-white w-12 h-12" />
               <h3 className="text-xl font-semibold text-white ml-4">Student Database</h3>
@@ -45,7 +45,7 @@ export default function FeaturesSection() {
           </div>
 
           {/* Card 4 */}
-          <div className="bg-emerald-600 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+          <div className="bg-[#002B5B] p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
             <div className="flex items-center mb-4">
               <BarChart2 className="text-white w-12 h-12" />
               <h3 className="text-xl font-semibold text-white ml-4">Performance Analytics</h3>
@@ -56,7 +56,7 @@ export default function FeaturesSection() {
           </div>
 
           {/* Card 5 */}
-          <div className="bg-emerald-600 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+          <div className="bg-[#002B5B] p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
             <div className="flex items-center mb-4">
               <Briefcase className="text-white w-12 h-12" />
               <h3 className="text-xl font-semibold text-white ml-4">Staff Management</h3>
@@ -67,7 +67,7 @@ export default function FeaturesSection() {
           </div>
 
           {/* Card 6 */}
-          <div className="bg-emerald-600 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+          <div className="bg-[#002B5B] p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
             <div className="flex items-center mb-4">
               <CreditCard className="text-white w-12 h-12" />
               <h3 className="text-xl font-semibold text-white ml-4">Fee Management</h3>

@@ -1,8 +1,9 @@
 "use client";
 
 import React, { useEffect, useState } from 'react';
-import logo from '@/../public/logo.jpeg';
+import logo from '@/../public/logo.png';
 import Image from 'next/image';
+
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -10,6 +11,7 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
+    
     const handleScroll = () => {
       if (window.scrollY > lastScrollY && window.scrollY > 100) {
         setShowNavbar(false); // Hide navbar on scroll down, after 100px
@@ -42,7 +44,7 @@ const Navbar = () => {
     <>
       {/* Navbar */}
       <nav
-        className={`fixed top-0 left-1/2 transform -translate-x-1/2 bg-white shadow-lg text-black flex items-center justify-between gap-8 px-6 py-3 rounded-full transition-transform duration-300 z-50 ${
+        className={`hidden sm:fixed top-0 left-1/2 transform -translate-x-1/2 bg-white shadow-lg text-black sm:flex items-center justify-between gap-8 px-6 py-3 rounded-full transition-transform duration-300 z-50 ${
           showNavbar ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
         }`}
       >
@@ -55,33 +57,45 @@ const Navbar = () => {
         <div className="flex items-center gap-6">
           <a
             href="#home"
-            className={`text-black hover:underline ${activeSection === "home" ? "underline" : ""}`}
+            className={`text-black hover:underline ${activeSection === "home" ? "underline text-[#002B5B]" : ""}`}
           >
             Home
           </a>
           <a
             href="#about"
-            className={`text-black hover:underline ${activeSection === "about" ? "underline" : ""}`}
+            className={`text-black hover:underline ${activeSection === "about" ? "underline text-[#002B5B]" : ""}`}
           >
             About Us
           </a>
           <a
             href="#features"
-            className={`text-black hover:underline ${activeSection === "features" ? "underline" : ""}`}
+            className={`text-black hover:underline ${activeSection === "features" ? "underline text-[#002B5B]" : ""}`}
           >
             Features
           </a>
           <a
+            href="#pricing"
+            className={`text-black hover:underline ${activeSection === "features" ? "underline text-[#002B5B]" : ""}`}
+          >
+            Pricing
+          </a>
+          <a
             href="#contact"
-            className={`text-black hover:underline ${activeSection === "contact" ? "underline" : ""}`}
+            className={`text-black hover:underline ${activeSection === "contact" ? "underline text-[#002B5B]" : ""}`}
           >
             Contact Us
+          </a>
+          <a
+            href="#faq"
+            className={`text-black hover:underline ${activeSection === "contact" ? "underline text-[#002B5B]" : ""}`}
+          >
+            FAQ
           </a>
         </div>
 
         {/* Log In Button */}
         <div>
-          <button className="bg-emerald-600 text-white px-4 py-2 rounded-lg hover:bg-slate-800 transition-colors">
+          <button className="bg-[#002B5B] text-white px-4 py-2 rounded-lg hover:bg-slate-800 transition-colors">
             Log In
           </button>
         </div>

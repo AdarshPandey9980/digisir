@@ -6,11 +6,11 @@ import Image from "next/image";
 export default function Home() {
   return (
     <section id="home">
-        <main className="mt-18 bg-emerald-600">
+        <main className="mt-18 bg-[#002B5B] ">
       {/* Hero Section */}
       <div className="container mx-auto px-4 mt-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center p-8">
         <div className="space-y-6">
-          <div className="inline-flex items-center gap-2 bg-emerald-700/50 px-4 py-2 rounded-full text-emerald-50">
+          <div className="inline-flex items-center gap-2 bg-blue-950 px-4 py-2 rounded-full text-emerald-50">
             <span className="animate-bounce">🚀</span>
             <span>ENHANCE YOUR SCHOOL EXPERIENCE</span>
           </div>
